@@ -1,0 +1,95 @@
+---
+title: "Cluster Profamille Ile de France"
+author: E. Valladier [1], D.Willard [2], MC Bralet [3], O Canceil [4], Y Morvan [5],
+  Y Hodé [6]
+subtitle: Evaluation de l’impact du programme Profamille par modélisation en réseaux
+output:
+  html_document: default
+  pdf_document: default
+  word_document: default
+institution:
+- id: '1'
+  institution: SHU - C3RP, GHU Paris Psychiatrie et Neurosciences
+- id: '2'
+  institution: CHI Clermont de l’Oise, CRISALID
+- id: '3'
+  institution: Hôpitaux de Saint Maurice
+- id: '4'
+  institution: Laboratoire CLIPSYD, EA4430, UFR SPSE, Université Paris Nanterre
+- id: '5'
+  institution: IPNP - INSERM UMR 1266, LPMP, Université de Paris
+- id: '6'
+  institution: Réseau Profamille
+---
+
+![](images/Picture%201-01.png){width="293"}
+
+### **Introduction** 
+
+La psychoéducation des familles de personnes ayant une schizophrénie a prouvé son efficacité dans la prévention des rechutes avec une amplitude d'effet équivalente à celle du traitement médicamenteux [1]. Le programme Profamille permet également la diminution de la dépression chez les proches aidants suivant le programme [2]. Profamille est cité dans le rapport Laforcade (octobre 2016) comme faisant partie des méthodes innovantes à promouvoir et à développer dans le cadre des recommandations de prise en charge en psychiatrie. Le Cluster Profamille Ile de France est composé de 9 équipes (SHU Sainte-Anne, ESM MGEN, CMP Marcadet, CMP Bucarest , CMP Paris 12 ,Savigny, Pantin, CHI Clermont de l'Oise, CMP Louis Mourier),  ayant permis à 614 aidants de participer au programme depuis 5 ans. Les anlyses suivantes ont été réalisées sur la base de données du Cluster en 2018 réunissant 5 équipes (SHU Sainte-Anne, ESM MGEN, CMP Marcadet ,CMP Bucarest, CMP Louis Mourier) et 403 participants.
+
+### Modélisation théorique de Profamille sur le fardeau des aidants
+
+Profamille se fonde sur un modèle inspiré des TCC et postule que différentes formes de préoccupations cognitives (soucis) des aidants via à vis de leurs proches souffrant de schizophrénie ainsi que des stratégies de coping inadaptées vis-à-vis de la maladie augmentent leur niveau de dépressivité. En d'autres termes le fardeau des aidants a également des conséquences sur leur santé psychique.
+
+### Modèle d'intervention qui en découle
+
+Au cours du Module 1 le programme dispense une intervention à dimension compor- tementale et cognitive qui s'attache à restaurer les compétences et à mobiliser les ressources du sujet dans son fonctionnement quotidien et dans son rapport à la maladie de son proche. Les "ingrédients actifs" , soit les stratégies thérapeutiques mises en œuvre sont : la psychoéducation concernant les troubles schizophréniques  , la gestion de leurs émotions, la résolution de problèmes, et l'apprentissage d'habiletés de communication. L'objectif de ce travail vise à évaluer ce modèle à l'aide de modélisations en réseaux.
+
+### Méthode
+
+A partir de données du Cluster IDF disponibles avant (n=397) et après le suivi du module 1 de Profamille (n=318) nous avons estimé deux réseaux de corrélations partielles avec techniques de pénalisation et de paranormalisation (liés à la multinormalité requise de ces modélisations) en pré et en post suivi du module 1 de Profamille [4]. Les différences de connexions entre ces réseaux ont ensuite été comparées à l'aide de tests de permutations [5]. Enfin, ne disposant pas de séries temporelles en nombre suffisant, nous avons employé une modélisation en réseau Bayesien afin de tenter d'identifier de potentiels sens de prédictions entre ces variables sur les données post module 1 [6] .
+
+### Résultats
+
+Le module 1 de Profamille semble avoir eu un effet d'amélioration des scores sur l'ensemble des dimensions (tableau 1). Les réseaux sont représentés de manière à pouvoir être comparés visuellement (Graphique 1). Toutefois, l'utilisation de tests de permutations est recommandée afin de vérifier quels aspects diffèrent entre-eux (Graphique 2). Si ces derniers ne permettent pas de conclure quant à une différence de structure (p=0,052) ou de connectivité globale entre ces deux réseaux (p=0,948), en revanche ils indiquent des différences de relations entre les variables connaissances et coping inadapté (p\<0,001), fatigue liée aux soucis et dépression (p=0,018) et enfin entre fréquence des soucis et fatigue liée aux soucis (p=0,034). La modélisation en réseau Bayésien sur les données post module 1 semble aller dans le sens de relations potentiellement prédictives entre connaissances, coping inadapté et dépression. En revanche, elle semble également indiquer deux voies potentiellement prédictives de la dépression des aidants : la difficulté à maitriser ses soucis via la fréquence des soucis d'une part et la fatigue liée aux soucis via les difficultés de concentration liées aux soucis d'autre part. 
+
+![](images/Tableau_correlation.png)
+
+![](images/Graphreseau_correlation.png){width="583"}
+
+![](images/Reseau_bayesien.png){width="349"}
+
+### Limites
+
+Ces résultats sont avant tout exploratoires et se doivent d'être confirmés. En effet, ces derniers reposent sur une analyse pré-post en situation réelle de prise en charge comportant un taux d'attrition important (près de 20%), De plus l'absence de séries temporelles ne permet pas d'estimer un sens de prédictibilité entre les variables incluses dans les réseaux. La comparaison entre les réseaux pré-post repose sur des techniques de permutations non encore validées pour ce type d'analyse (échantillons dépendants). Enfin si les  analyses en réseau Bayésien ont permis de modéliser un graphique de relations dirigées et acycliques elles véhiculent également une hypothèse forte et potentiellement erronée quant à la nature acyclique des relations entre variables au court du temps.     
+
+### Conclusion
+
+Ces analyses nous permettent
+d'observer que chez les aidants la fréquence du souci augmenterait la
+difficulté à maitriser les soucis, et les problèmes de concentration
+augmenterait la fatigue liée aux soucis. Ces résultats suggèrent donc que les
+variables étudiées pourraient effectivement êtres considérés comme des
+prédicteurs potentiels de la dépression chez les aidants d'une part et que,
+d'autre part, tant la psychoéducation concernant les troubles schizophréniques
+de leurs proches que la diminution du coping inadapté constituent des cibles
+pertinentes d'intervention.
+
+[**Bibliographie:**]{.ul}
+
+[1] Lucksted A, McFarlane W, Downing D, Dixon L. J
+Marital. Recent developments in family psychoeducation as an evidence-based practice. Fam
+Ther.
+2012.
+
+[2] Valladier E, Willard D, Romo
+L, et al.. La dépression chez les proches de patients souffrant de
+schizophrénie : effets longitudinaux sur 8 mois du programme Profamille. Encephale. 2017.
+
+[3] Hodé
+Y, Krychowski R, Beck N, et al. Effet d'un programme psychoéducatif sur l'humeur es familles des malads souffrant de schizophrénie. J de Thérapie Comportementale et
+Cognitive. 2008.
+
+[4] Epskamp S, Borsboom
+D, Fried E. Estimating psychological networks and their accuracy: A tutorial
+paper. Behav
+Res Methods 2018.
+
+[5] Van Borkulo
+CD, Boschloo L, Kossakowski JJ, Tio P, Schoevers
+RA, Borsboom D, et al. Comparing network structures
+on three aspects: A permutation test.
+
+[6] McNally RJ. Can network
+analysis transform psychopathology? Behav Res Ther 2016.
